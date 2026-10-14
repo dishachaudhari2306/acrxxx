@@ -64,9 +64,11 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="gap-2 text-slate-200 hover:text-white">
+            <Button asChild variant="ghost" size="sm" className="gap-2 text-slate-200 hover:text-white">
+              <a href="tel:+447478034205">
               <Phone className="w-4 h-4" />
-              7875577401
+              +44 7478 034205
+              </a>
             </Button>
             <Button asChild variant="hero" size="sm" className="px-5">
               <a href="#contact">Book Strategy Call</a>
@@ -105,9 +107,11 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                  <Button variant="outline" size="sm" className="w-full gap-2">
+                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                    <a href="tel:+447478034205">
                     <Phone className="w-4 h-4" />
-                    7875577401
+                    +44 7478 034205
+                    </a>
                   </Button>
                   <Button asChild variant="hero" size="sm" className="w-full">
                     <a href="#contact">Book Strategy Call</a>

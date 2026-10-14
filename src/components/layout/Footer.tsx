@@ -26,14 +26,24 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <span className="text-2xl font-heading font-bold gradient-text">Arcxx Marketing &amp; Consultancy</span>
             <p className="text-muted-foreground mt-4 text-sm leading-relaxed">
-              A senior growth pod for brands that want an end-to-end digital ecosystem — not disconnected vendors.
+              2023 Arcxx Marketing &amp; Consultancy owned by Kreevs Fashion.
             </p>
             <div className="flex gap-3 mt-6">
-              {[Instagram, Facebook, Linkedin].map((Icon, i) => (
+              <a
+                href="https://instagram.com/arcxxmediaworks?mdxt=MTRuOG1pZmYwOWt6MA%3D%3D"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all hover:scale-110"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              {[Facebook, Linkedin].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
                   className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all hover:scale-110"
+                  aria-label="Social link"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
@@ -89,19 +99,19 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
-                <span>+91 78755 77401</span>
+                <a href="tel:+447478034205" className="hover:text-foreground transition-colors">+44 7478 034205</a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
-                <span>hello@arcxxmedia.com</span>
+                <a href="mailto:Arcxxmediaworks@gmail.com" className="hover:text-foreground transition-colors">Arcxxmediaworks@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
-                <span>Mumbai, India</span>
+                <span>United Kingdom</span>
               </li>
             </ul>
           </div>
