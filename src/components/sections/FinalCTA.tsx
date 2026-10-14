@@ -61,7 +61,7 @@ const FinalCTA = () => {
             className="text-xs md:text-sm text-zinc-300 mt-8 flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4 text-primary" />
-            Or call directly: <span className="font-semibold text-white">+91 78755 77401</span>
+            Or call directly: <a href="tel:+447478034205" className="font-semibold text-white hover:text-primary transition-colors">+44 7478 034205</a>
           </motion.p>
         </motion.div>
       </div>
